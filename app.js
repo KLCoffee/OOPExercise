@@ -79,18 +79,34 @@ console.log(DM.loveDisneyMovies());
 console.log(`===Number 5===`);
 // 5a
 class DMCast extends DM {
+// 5b/c 
     constructor(t, m, c){
         super(t, m);
-        this.cast = c;
+        this.cast = mulanCast;
     
-    const cast = {
+
+    const mulanCast = {
        mulan: `Ming-Na Wen`, 
        mushu: `Eddie Murphy`, 
        shang: `BD Wong`, 
        theEmperor: `Pat Morita`,
-       
-    };  
-  }
+    }
+    const mulan3 = new DMCast (`Mulan`,`Fa Mulan`,`Ming-Na Wen`,`Eddie Murphy`,`BD Wong`, `Pat Morita`,)
+
+console.log(mulan3); 
+
 }
+    
+// 6
+     static create(){
+         return (`Moana`, 
+         `Moana of Motunui`, 
+         {moana: `Auli'i Cravalho`, maui: `Dwayne Johnson`, grammaTala: `Rachel House`, chiefTui: `Temuera Morrison`
+        })
+    }  
+}
+
+  
+
 
 
